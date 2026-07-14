@@ -1,295 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Inter:wght@400;600&family=Merriweather:wght@900&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mov Tepny | Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Merriweather:wght@900&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
-<body class="bg-blue-90 text-slate-900">
-
-<header class="sticky top-0 z-50 flex items-center justify-between px-6 py-4 border-b bg-white/100 backdrop-blur-lg border-slate-200 lg:px-20">
-  <div class="text-2xl font-bold tracking-tighter">Mov Tepny</div>
-
-  <div class="flex items-center gap-6">
-    <nav id="mobile-menu" class="hidden xl:block">
-      <ul class="flex space-x-8 text-[12px] uppercase font-bold tracking-widest">
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#portfolio">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <button id="theme-toggle" class="p-2 transition-transform rounded-full bg-slate-100 dark:bg-slate-800 hover:scale-100">
-              <span id="theme-icon">🌙</span>
-            </button>         
-    <button id="menu-toggle" class="xl:hidden">
-      <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          d="M4 6h16M4 12h16M4 18h16"></path>
-      </svg>
-    </button>
-  </div>
-</header>
-<div class="w-50 h-1.5 bg-customBlue dark:bg-blue-500 mx-auto rounded-full"></div>
-
-<!-- HERO -->
-<section class="relative flex items-center justify-center min-h-screen px-6 overflow-hidden text-white bg-slate-900 lg:px-20 dark:bg-blue-900">
-  <div class="z-10 grid items-center gap-12 mx-auto lg:grid-cols-2 max-w-7xl ">
-
-    <div class="animate__animated animate__fadeInLeft">
-      <p class="text-blue-500 font-semibold mb-lg-3 text-6xl lg:text-3xl font-bold">FRONTEND DEVELOPER</p>
-      <br>
-
-      <h1 class="mb-6 text-5xl lg:text-5xl font-bold">
-        Hello, I'm <br> <span class="text-blue-400">Mov Tepny</span>
-      </h1>
-
-      <div class="h-10 mb-10 text-xl italic font-light lg:text-2xl">
-        I build <span id="typewriter"></span><span class="cursor"></span>
-      </div>
-
-      <div class="flex gap-4">
-        <a href="image/cv.jpg" class="px-8 py-4 bg-white text-slate-900 font-bold rounded-full">Download CV</a>
-        <a href="https://t.me/tepny24689" class="px-8 py-4 border-2 rounded-full border-white/30 hover:bg-white/10">Contact Me</a>
-      </div>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home">Mov Tepny</a>
+    <div class="header-actions">
+      <nav id="mobile-menu" class="site-nav" aria-label="Main navigation">
+        <ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#portfolio">Projects</a></li><li><a href="#contact">Contact</a></li></ul>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme"><span id="theme-icon">🌙</span></button>
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
     </div>
+  </header>
 
-    <div class="relative flex justify-center animate__animated animate__zoomIn">
-      <div class="w-[300px] h-[400px] lg:w-[450px] lg:h-[550px] bg-blue-500 overflow-hidden shadow-2xl border-6 border-white rounded-3xl">
-        <img src="image/1xxxphoto.jpg" alt="Profile" class="object-cover w-full h-full border-2 border-dark shadow-xl ">
-      </div>
-    </div>
-  </div>
-</section>
-<section>
-</section>
-<div class="w-50 h-1.5 bg-customBlue dark:bg-blue-500 mx-auto rounded-full"></div>
-<!-- ABOUT SECTION -->
-<section id="about" class="py-28 bg-gray-900 text-white  dark:bg-blue-900">
-  <div class="px-5 mx-auto max-w-7xl grid lg:grid-cols-2 gap-12 items-center">
-    <div class="flex justify-center lg:justify-start  w-[400px] h-[400px] me-4">
-      <img src="image/1xxxphoto.jpg" alt=" " class="rounded-xl border-4 border-dark shadow-xl w-80 ">
-    </div>
-
-    <!-- RIGHT: Text & Details -->
-    <div class="space-y-6">
-     <h2 class="text-xl  d-flex text-white font-bold">About Me</h2>
-      <div class=" border-dark-500 border-l-4 pl-4">
-        <h4 class="italic text-lg">
-        "Dedicated front-end developer"
-      </h4>
-
-      <p>
-        I'm Mov Tepny ,I design and build modern, responsive websites that are fast and user-friendly with expertise in HTML, CSS, JavaScript, Tailwind CSS, and React.js <br>
-         I bring designs to life with precision and creativity.
-      </p>
-      <p>
-        My journey in web development is driven by a commitment to continuous learning and innovation. 
-      </p>
-      </div>
-
-      <!-- Personal Info -->
-      <div class="grid grid-cols-2 gap-4 text-white font-semibold mt-4">
-        <div>
-          <p><span class="font-bold">Name:</span> Mov Tepny</p>
-          <p><span class="font-bold">Email:</span> tepny8042006@gmail.com</p>
+  <main>
+    <section id="home" class="hero section-dark">
+      <div class="hero-content">
+        <div class="animate__animated animate__fadeInLeft">
+          <p class="eyebrow">Frontend Developer</p>
+          <h1>Hello, I’m <br><span>Mov Tepny</span></h1>
+          <div class="typewriter">I build <span id="typewriter"></span><span class="cursor"></span></div>
+          <div class="hero-links"><a class="button button-light" href="images/cv.jpg">Download CV</a><a class="button button-outline" href="https://t.me/tepny24689">Contact Me</a></div>
         </div>
-        <div>
-          <p><span class="font-bold">Nationality:</span> Khmer</p>
-          <p><span class="font-bold">Phone:</span> (+855) 99 718 157</p>
+        <div class="hero-photo animate__animated animate__zoomIn"><img src="images/photo_2026-07-14_22-37-14.jpg" alt="Portrait of Mov Tepny"></div>
+      </div>
+    </section>
+
+    <section id="about" class="about section-dark">
+      <div class="two-column">
+        <div class="about-photo"><img src="images/1xxxphoto.jpg" alt="Mov Tepny"></div>
+        <div class="about-copy">
+          <h2>About Me</h2>
+          <div class="quote"><h3>“Dedicated front-end developer”</h3><p>I’m Mov Tepny. I design and build modern, responsive websites that are fast and user-friendly, with expertise in HTML, CSS, JavaScript, Tailwind CSS, and React.js.</p><p>I bring designs to life with precision and creativity. My journey in web development is driven by a commitment to continuous learning and innovation.</p></div>
+          <div class="personal-info"><div><p><strong>Name:</strong> Mov Tepny</p><p><strong>Email:</strong> tepny8042006@gmail.com</p></div><div><p><strong>Nationality:</strong> Khmer</p><p><strong>Phone:</strong> (+855) 99 718 157</p></div></div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<div class="w-50 h-1.5 bg-customBlue dark:bg-blue-500 mx-auto rounded-full"></div>
-<!-- SKILLS SECTION -->
-<section id="skills" class="py-28 bg-gray-900 dark:bg-blue-900">
-  <div class="px-5 mx-auto max-w-7xl">
-    <h3 class="mb-10 text-4xl font-merri text-center text-white">Professional Skillset</h3>
-    <div class="space-y-8 max-w-2xl mx-auto ">
+    </section>
 
-      <!-- Skill -->
-      <div>
-        <div class="flex justify-between mb-2 font-bold text-white"><span>C Programming</span><span>70%</span></div>
-        <div class="w-full h-2 rounded-full bg-slate-200">
-          <div class="h-full bg-blue-500 rounded-full" style="width:70%"></div>
-        </div>
-      </div>
+    <section id="skills" class="skills section-dark"><div class="content"><h2>Professional Skillset</h2><div class="skill-list">
+      <div class="skill"><div><span>C Programming</span><span>70%</span></div><div class="skill-track"><span class="skill-bar skill-70"></span></div></div>
+      <div class="skill"><div><span>C++ Programming</span><span>80%</span></div><div class="skill-track"><span class="skill-bar skill-80"></span></div></div>
+      <div class="skill"><div><span>Java</span><span>70%</span></div><div class="skill-track"><span class="skill-bar skill-70"></span></div></div>
+      <div class="skill"><div><span>HTML</span><span>95%</span></div><div class="skill-track"><span class="skill-bar skill-95"></span></div></div>
+      <div class="skill"><div><span>CSS</span><span>90%</span></div><div class="skill-track"><span class="skill-bar skill-90"></span></div></div>
+      <div class="skill"><div><span>JavaScript</span><span>60%</span></div><div class="skill-track"><span class="skill-bar skill-60"></span></div></div>
+      <div class="skill"><div><span>React</span><span>70%</span></div><div class="skill-track"><span class="skill-bar skill-70"></span></div></div>
+      <div class="skill"><div><span>PHP</span><span>60%</span></div><div class="skill-track"><span class="skill-bar skill-60"></span></div></div>
+      <div class="skill"><div><span>C#</span><span>60%</span></div><div class="skill-track"><span class="skill-bar skill-60"></span></div></div>
+    </div></div></section>
 
-      <div>
-        <div class="flex justify-between mb-2 font-bold text-white"><span>C++ Programming</span><span>80%</span></div>
-        <div class="w-full h-2 rounded-full bg-slate-200">
-          <div class="h-full bg-blue-500 rounded-full" style="width:80%"></div>
-        </div>
-      </div>
+    <section id="portfolio" class="portfolio section-dark"><div class="content"><div class="section-heading reveal"><h2>Selected Projects</h2></div><div class="project-grid">
+      <article class="project-card reveal"><img src="https://i.pinimg.com/1200x/5a/62/c2/5a62c2938baf7ec3e9f9a7a85b49c574.jpg" alt="Clothes Shop project preview"><div><h3>Clothes Shop</h3><a class="project-link" href="https://github.com/tepny/Clothes-Project" target="_blank" rel="noopener">View Project</a></div></article>
+      <article class="project-card reveal"><img src="https://i.pinimg.com/736x/ca/5b/d3/ca5bd3fe3f4c88714bd05aa5dfd3ac04.jpg" alt="Coffee and milk tea shop project preview"><div><h3>Coffee and Milk Tea Shop</h3><a class="project-link" href="https://github.com/tepny/Cafe-shop" target="_blank" rel="noopener">View Project</a></div></article>
+      <article class="project-card reveal"><img src="https://i.pinimg.com/1200x/72/d9/af/72d9af964d384fc2a16fd087c1062a7c.jpg" alt="Online food shop project preview"><div><h3>Online Food Shop</h3><a class="project-link" href="https://github.com/tepny/online-shop-food" target="_blank" rel="noopener">View Project</a></div></article>
+    </div></div></section>
+  </main>
 
-      <div>
-        <div class="flex justify-between mb-2 font-bold text-white"><span>Java</span><span>70%</span></div>
-        <div class="w-full h-2 rounded-full bg-slate-200">
-          <div class="h-full bg-blue-500 rounded-full" style="width:70%"></div>
-        </div>
-      </div>
-
-      <div>
-        <div class="flex justify-between mb-2 font-bold text-white"><span>HTML</span><span>95%</span></div>
-        <div class="w-full h-2 rounded-full bg-slate-200">
-          <div class="h-full bg-blue-500 rounded-full" style="width:95%"></div>
-        </div>
-      </div>
-
-      <div>
-        <div class="flex justify-between mb-2 font-bold text-white"><span>CSS</span><span>90%</span></div>
-        <div class="w-full h-2 rounded-full bg-slate-200">
-          <div class="h-full bg-blue-500 rounded-full" style="width:90%"></div>
-        </div>
-      </div>
-
-      <div>
-        <div class="flex justify-between mb-2 font-bold text-white"><span>JavaScript</span><span>60%</span></div>
-        <div class="w-full h-2 rounded-full bg-slate-200">
-          <div class="h-full bg-blue-500 rounded-full" style="width:60%"></div>
-        </div>
-      </div>
-
-      <div>
-        <div class="flex justify-between mb-2 font-bold text-white"><span>React</span><span>70%</span></div>
-        <div class="w-full h-2 rounded-full bg-slate-200">
-          <div class="h-full bg-blue-500 rounded-full" style="width:70%"></div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-<div class="w-50 h-1.5 bg-customBlue dark:bg-blue-500 mx-auto rounded-full"></div>
-<!-- Project -->
-<section id="portfolio" class="px-6 bg-gray-900 dark:bg-blue-900 py-28">
-  <div class="mx-auto max-w-7xl">
-    <div class="mb-16 text-center reveal">
-      <h2 class="mb-4 text-5xl text-white font-merri">Selected Projects</h2>
-      <div class="w-20 h-1.5 bg-customBlue dark:bg-blue-600 mx-auto rounded-full"></div>
-    </div>
-
-    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-
-      <!-- Card 1 -->
-      <div class="relative overflow-hidden transition-all duration-500 bg-white shadow-xl group dark:bg-slate-800 rounded-3xl hover:-translate-y-3 reveal">
-        <div class="h-64 overflow-hidden">
-          <img src="https://i.pinimg.com/1200x/5a/62/c2/5a62c2938baf7ec3e9f9a7a85b49c574.jpg"
-               class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110">
-           <a href=""></a>    
-        </div>
-        <div class="p-8">
-          <h3 class="text-xl font-bold dark:text-white">Cothese Shop</h3>
-          <!-- Button added -->
-           <a href="https://github.com/tepny/Clothes-Project" target="_blank">
-            <button class="mt-4 px-5 py-2 bg-customBlue text-white rounded-xl hover:bg-blue-800 transition">
-            View Project
-          </button></a>
-          
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="relative overflow-hidden transition-all duration-500 bg-white shadow-xl group dark:bg-slate-800 rounded-3xl hover:-translate-y-3 reveal">
-        <div class="h-64 overflow-hidden">
-          <img src="https://i.pinimg.com/736x/ca/5b/d3/ca5bd3fe3f4c88714bd05aa5dfd3ac04.jpg"
-               class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110">
-        </div>
-        <div class="p-8">
-          <h3 class="text-xl font-bold dark:text-white">Coffee and Milk Tea Shop</h3>
-
-          <!-- Button added -->
-          <a href="https://github.com/tepny/Cafe-shop" target="_blank">
-          <button class="mt-4 px-5 py-2 bg-customBlue text-white rounded-xl hover:bg-blue-800 transition">
-            View Project
-          </button>
-          </a>
-          
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="relative overflow-hidden transition-all duration-500 bg-white shadow-xl group dark:bg-slate-800 rounded-3xl hover:-translate-y-3 reveal">
-        <div class="h-64 overflow-hidden">
-          <img src="https://i.pinimg.com/1200x/72/d9/af/72d9af964d384fc2a16fd087c1062a7c.jpg"
-               class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110">
-        </div>
-        <div class="p-8">
-          <h3 class="text-xl font-bold dark:text-white">Online Food Shop</h3>
-          <!-- Button added -->
-          <a href="https://github.com/tepny/online-shop-food" target="_blank">
-            <button class="mt-4 px-5 py-2 bg-customBlue text-white rounded-xl hover:bg-blue-800 transition">
-            View Project
-          </button>
-        </a>
-    
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
- <div class="w-50 h-1.5 bg-customBlue dark:bg-blue-500 mx-auto rounded-full"></div>   
-<!-- Training Courses -->    
-<div class="w-50 h-1.5 bg-customBlue dark:bg-blue-500 mx-auto rounded-full"></div>
-<footer id="contact" class="px-6 pb-10 text-white bg-gray-900 dark:bg-blue-900 pt-28">
-       
-    <div class="grid gap-20 pb-20 mx-auto border-b max-w-7xl lg:grid-cols-2 border-white">
-        <div class="reveal">
-            <h2 class="mb-8 text-6xl font-slab">
-                Ready to <br> <span class="text-blue-300">contact?</span>
-            </h2>
-            <div class="space-y-6 text-xl text-slate-400">
-                <p>📍 Phnom Penh, Cambodia</p>
-                <p>📧 tepny8042006@gmail.com</p>
-                <p>📞 +855 99718157</p>
-            </div>
-            <br>
-            <div class="social">
-              <a href="https://facebook.com" target="_blank">
-               <img src="https://i.pinimg.com/736x/04/7d/60/047d603f517f98cd681da68bbd87ee85.jpg" class="icon"></a>
-                <a href="https://github.com/tepny" target="_blank">
-               <img src="https://i.pinimg.com/736x/7e/12/ce/7e12ceb8f210365adbb8d9ca5ce925f0.jpg" class="icon"></a>
-                <a href="https://www.instagram.com/nysa7922/" target="_blank">
-               <img src="https://i.pinimg.com/1200x/1f/3a/6c/1f3a6cc746ca032805bd9a641b311bbf.jpg" class="icon"></a>
-               <a href="https://t.me/tepny24689" target="_blank">
-               <img src="https://i.pinimg.com/736x/59/6d/74/596d74fed827cf406cbd2a4f0d8f00b2.jpg" class="icon"></a>
-            </div>
-        </div>
-
-        <div class="reveal">
-            <!-- Form -->
-            <form class="space-y-4" onsubmit="showAlert(event)">
-                <input type="text" required placeholder="Full Name"
-                    class="w-full p-4 transition-colors border bg-white/5 border-white/10 rounded-xl focus:outline-none focus:border-blue-400">
-
-                <input type="email" required placeholder="Email Address"
-                    class="w-full p-4 transition-colors border bg-white/5 border-white/10 rounded-xl focus:outline-none focus:border-blue-400">
-
-                <textarea rows="4" required placeholder="Your Message"
-                    class="w-full p-4 transition-colors border bg-white/5 border-white/10 rounded-xl focus:outline-none focus:border-blue-400"></textarea>
-
-                <button type="submit"
-                    class="w-full py-4 font-bold transition-all bg-blue-500 hover:bg-green-900 rounded-xl">
-                    Send
-                </button>
-            </form>
-        </div>
-    </div>
-
-    <p class="mt-10 text-center text-slate-500">© 2025 Mov Tepny.</p>
-</footer>
-
-
-<script src="script.js"></script>
+  <footer id="contact" class="site-footer section-dark"><div class="footer-content"><div class="reveal"><h2>Ready to <br><span>contact?</span></h2><div class="contact-details"><p>📍 Phnom Penh, Cambodia</p><p>📧 tepny8042006@gmail.com</p><p>📞 +855 99718157</p></div><div class="social"><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a><a href="https://github.com/tepny" target="_blank" rel="noopener">GitHub</a><a href="https://www.instagram.com/nysa7922/" target="_blank" rel="noopener">Instagram</a><a href="https://t.me/tepny24689" target="_blank" rel="noopener">Telegram</a></div></div><form class="contact-form reveal"><input type="text" required placeholder="Full Name"><input type="email" required placeholder="Email Address"><textarea rows="4" required placeholder="Your Message"></textarea><button type="submit">Send</button></form></div><p class="copyright">© 2026 Mov Tepny.</p></footer>
+  <script src="JS/script.js"></script>
 </body>
 </html>
